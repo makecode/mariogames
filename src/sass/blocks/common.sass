@@ -1,0 +1,109 @@
+=light
+  font-family: 'Lato', Helvetica, Arial, sans-serif
+  font-weight: 300
+=regular
+  font-family: 'Lato', Helvetica, Arial, sans-serif
+  font-weight: 400
+=bold
+  font-family: 'Lato', Helvetica, Arial, sans-serif
+  font-weight: 700
+
+body
+  display: flex
+  flex-direction: column
+  min-width: 1010px
+  font-size: 14px
+  line-height: 1.4
+  color: #2e2e2e
+  background: url("../img/bg.png")
+  background-color: #2882d8
+  +regular
+
+h1
+  font-size: 26px
+  text-transform: uppercase
+  +bold
+
+h2
+  font-size: 20px
+
+  &.is-fz-16
+    font-size: 16px
+a
+  color: #3481f3
+  display: inline-block
+  text-decoration: none
+  cursor: pointer
+  transition: all .3s ease-in-out
+
+img
+  display: inline-flex
+  max-width: 100%
+  height: auto
+
+input[type='text'],
+input[type='search'],
+input[type='button']
+  -moz-appearance: none
+  -webkit-appearance: none
+
+.i-bold
+  +bold
+
+.title
+  text-transform: uppercase
+  +bold
+
+.logo
+  display: inline-block
+
+  &__img
+    width: 370px
+
+.copyright
+  font-size: 12px
+  color: #ffffff
+
+.title-head
+  margin: 10px 0
+
+.banner-wrap
+  margin-top: 30px
+  margin-bottom: 43px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.game-block
+
+  &__link
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 790px
+    height: 600px
+    background-color: #000000
+
+.rating
+  display: flex
+  justify-content: center
+  align-items: center
+
+  span
+    text-transform: uppercase
+    font-size: 12px
+    +light
+
+.description
+  margin-bottom: 25px
+  p
+    +light
+
+.banner
+
+  &.with-border
+    margin-right: 15px
+    margin-bottom: 25px
+    padding: 40px
+    border: 1px solid #eaeaea
+

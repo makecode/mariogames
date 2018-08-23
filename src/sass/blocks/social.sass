@@ -1,0 +1,45 @@
+.social
+
+  &__list
+    display: flex
+
+  &__el
+    position: relative
+    margin-right: 14px
+    text-align: center
+    width: 142px
+    height: 44px
+    line-height: 44px
+    border-radius: 5px
+
+    &:last-child
+      margin-right: 0
+
+    &.is-blue
+      background-color: #5d74ca
+
+      &:hover
+        background-color: #6880d9
+
+    &.is-light-blue
+      background-color: #56b1e8
+
+      &:hover
+        background-color: #60c0f7
+
+    &.is-red
+      background-color: #f86153
+
+      &:hover
+        background-color: #ff6e61
+
+    .ico
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 10px
+
+  &__link
+    color: #fff
+    font-size: 14px
+    +regular
