@@ -1,11 +1,13 @@
 .social
+  width: 70%
+  margin-left: 23px
 
   &__list
     display: flex
+    justify-content: space-between
 
   &__el
     position: relative
-    margin-right: 14px
     text-align: center
     width: 142px
     height: 44px
@@ -37,9 +39,13 @@
       position: absolute
       top: 50%
       transform: translateY(-50%)
-      left: 10px
+      left: 15px
 
   &__link
+    display: block
     color: #fff
     font-size: 14px
     +regular
+
+  span
+    margin-left: 25px

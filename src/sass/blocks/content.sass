@@ -4,7 +4,7 @@
   background-color: #ffffff
 
   &__wrap
-    margin-bottom: 15px
+    margin-bottom: 20px
     display: flex
     flex-direction: row
     justify-content: space-between
@@ -12,11 +12,38 @@
 
     h1
       letter-spacing: -.5px
+      line-height: 1.2
 
   &.is-inner-1
     .banner.with-border
       float: left
 
+    .item
+      //margin-bottom: 30px
+
+      &__name
+        display: block
+        text-align: center
+        //overflow: hidden
+        //text-overflow: ellipsis
+        //white-space: nowrap
+
+    .item:nth-child(4),
+    .item:nth-child(7),
+    .item:nth-child(12),
+    .item:nth-child(17),
+    .item:nth-child(22)
+      margin-right: 0
+
+    .item:nth-child(5n)
+      margin-right: 15px
+
+    .item:nth-child(6)
+      margin-right: 15px!important
+
   &.is-inner-2
     h2
       letter-spacing: -.4px
+
+.best-games
+  +clear()

@@ -6,7 +6,9 @@
 .control
   margin-right: 40px
   margin-bottom: 10px
-  kdb
+  font-size: 13px
+
+  &__sign
     display: inline-flex
     justify-content: center
     padding: 0 4px
@@ -17,5 +19,27 @@
     border-radius: 6px
     box-sizing: border-box
 
+    &.is-big
+      width: 70px
+      padding: 0
+
   &__name
+    position: relative
+    padding-left: 18px
     +regular
+
+    &:after,
+    &:before
+      position: absolute
+      left: 5px
+      content: ''
+      height: 1px
+      width: 7px
+      background-color: #2e2e2e
+
+    &:before
+      top: 50%
+      transform: translateY(-50%)
+
+    &:after
+      top: 10px
